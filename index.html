@@ -6,24 +6,34 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>CIT261-Group-Project - Home Page</title>
+        <script type="text/javascript" src="/javascripts/layout.js"></script>
+        <title>When To Meet- Home Page</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <link rel="stylesheet" type="text/css" href="public/stylesheets/style.css">
-        
     </head>
     <body>
         <div id="navcontainer">
             <ul id="navlist">
                 <li><a href="#" class="active">Home</a></li>
+                <li><a href="">Schedule</a></li>
                 <li><a href="">My Meetings</a></li>
-                <li><a href="">Results</a></li>
                 <li><a href="">Tutorial</a></li>
             </ul>
         </div>
-        <h1>Welcome to __________</h1>
-        
-        
+        <h1>Welcome to When To Meet</h1>
+        <h3>Please enter the name of your meeting to begin</h3>
+        <form id="newMeet" method="post" action="createMeeting">
+		<input id="meetingName" name="meetingName" required>
+                <input id="create" type="submit">
+	</form>
+        <h3>Or search for a meeting by entering the Meeting ID below</h3>
+	<form id="searchMeet">
+            <input id="meetingID" required>
+            <input id="search" type="submit">
+	</form>
+        <script type="text/javascript" src="public/javascripts/home.js"></script>
         
     </body>
+    
 </html>
